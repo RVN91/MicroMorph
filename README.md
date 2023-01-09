@@ -29,7 +29,7 @@ FAN includes a number of algorithms to calculate the size and shape of Microplas
 * Particle filling
 * Convex hull
 * Feret's diameter
-* Particle thinning
+* Zhang-suen thinning
 * Skeletonazition
 * Breadth-first search, and more. 
 
@@ -64,7 +64,7 @@ The skeleton is calculated using the Zhang-suen thinning algorithm. Endpoints ar
 
 <p align="center">
 <img src="fig02.png">
-<figcaption align = "center">Figure 2: A: Particle before skeletonization. B: Morphological skeletonization of A. Notice multiple branches departing from the main skeleton. C: Endpoints of the skeleton. D: Longest path in skeleton between two endpoints. D is defined as the fiber length.</figcaption>
+<figcaption align = "center">Figure 2: A: Particle before skeletonization. B: Morphological skeletonization of A. Notice multiple branches departing from the main skeleton. C: Endpoints of the skeleton. D: Longest path in skeleton between two endpoints. The yellow line in D is defined as the fiber length.</figcaption>
 </p>
 
 
