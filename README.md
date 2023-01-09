@@ -27,7 +27,7 @@ Algorithm:
 6. Repeat steps 3 to 5 until p is equal to S.
 
 <p align="center">
-![This is an image](fig01.png)
+<img src="fig01.png">
 <figcaption align = "center">Figure 1: How the algorithm transverses through the particle pixel map and the resulting pixel boundary.</figcaption>
 </p>
 
