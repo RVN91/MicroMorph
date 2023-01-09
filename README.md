@@ -5,7 +5,7 @@ MicroMorph: The Microplastic Shape and Size Analyzer
 
 ## Fibers and Numbers (FAN)
 
-FAN calculates the shape morphology and size* of objects from the particle map provided by sIMPle (https://simple-plastics.eu/). It provides a graphical interface to inspect particles and their respective shape characteristics. The program calculates the following size and shape descriptors:
+FAN calculates the shape morphology and size of objects from the particle map provided by sIMPle (https://simple-plastics.eu/). It provides a graphical interface to inspect particles and their respective shape characteristics. The program calculates the following size and shape descriptors:
 
 Size:
 * Area, perimeter, minor dimension, major dimension, perimeter, and maximum and minimum Feret diameter
@@ -26,9 +26,10 @@ Algorithm:
 5. Go through the Moore Neighbourhood (3 * 3 pixels around p) starting from b and look for the first non-zero pixel in a clockwise rotation around p.
 6. Repeat steps 3 to 5 until p is equal to S.
 
+<p aligen="center">
 ![This is an image](fig01.png)
 <figcaption align = "center">Figure 1: How the algorithm transverses through the particle pixel map and the resulting pixel boundary.</figcaption>
-
+</p>
 
 
 
