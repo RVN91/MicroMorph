@@ -16,6 +16,7 @@ Size:
 Shape:
 * Convexity, convex area, solidity, equivalent circle diameter, circularity, compactness, aspect ratio, Feret ratio, fiber length, fiber curl, average fiber diameter, fiber elongation
 
+FAN is written in C-idiomatic style C++ code with little use of C++ features (pretty much just std::vector). The binary is statically linked and the only dependencies are the Microsoft distributables.
 
 ### Contour tracing
 
