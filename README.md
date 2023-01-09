@@ -2,9 +2,7 @@
 
 MicroMorph: The Microplastic Shape and Size Analyzer
 
-<p align="center">
 ![](microMorph.gif)
-</p>
 
 ## Fibers and Numbers (FAN)
 
