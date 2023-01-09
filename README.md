@@ -21,6 +21,19 @@ FAN is written in C-idiomatic style C++ code with little use of C++ features (pr
 
 Run FAN.exe. An unfinished documentation is avaialble in the "documentation.odf" with an explanation of the most critical features. 
 
+## Algorithms
+
+FAN includes a number of algorithms to calculate the size and shape of Microplastic particles, including:
+
+* Contour tracer
+* Particle filling
+* Convex hull
+* Feret's diameter
+* Particle thinning
+* Skeletonazition
+* Breadth-first search, and more. 
+
+The most interesting algorithms are explained below. 
 
 ### Contour tracing
 
@@ -43,9 +56,9 @@ Algorithm:
 
 Fiber length is calculated by the following approach:
 
-1.	Find the skeleton of the object (Figure 2 B).
-2.	Find pixels in the skeleton with only one non-zero neighbour skeleton pixel (Fiure 2 C). Define them as endpoints.
-3.	Find the shortest distance between all endpoints and select the longest of the shortest paths (Figure 2 D).
+1. Find the skeleton of the object (Figure 2 B).
+2. Find pixels in the skeleton with only one non-zero neighbour skeleton pixel (Fiure 2 C). Define them as endpoints.
+3. Find the shortest distance between all endpoints and select the longest of the shortest paths (Figure 2 D).
 
 The skeleton is calculated using the Zhang-suen thinning algorithm. Endpoints are found by visiting each skeleton pixel and find the pixels with only one neighbour skeleton pixel. The shortest distance between each endpoint is found by the breath first search algorithm. The longest path is found by comparing each of the shortest paths between endpoints and selecting the longest. Hence, the fiber length is the longest shortest path between endpoints.
 
