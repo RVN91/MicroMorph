@@ -3,7 +3,7 @@
 MicroMorph: The Microplastic Shape and Size Analyzer
 
 <p align="center">
-<img src="screenshot.png">
+![](microMorph.gif)
 </p>
 
 ## Fibers and Numbers (FAN)
@@ -17,6 +17,12 @@ Shape:
 * Convexity, convex area, solidity, equivalent circle diameter, circularity, compactness, aspect ratio, Feret ratio, fiber length, fiber curl, average fiber diameter, fiber elongation
 
 FAN is written in C-idiomatic style C++ code with little use of C++ features (pretty much just std::vector). The binary is statically linked and the only dependencies are the Microsoft distributables.
+
+
+## Usage
+
+Run FAN.exe. An unfinished documentation is avaialble in the "documentation.odf" with an explanation of the most critical features. 
+
 
 ### Contour tracing
 
