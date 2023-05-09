@@ -52,23 +52,6 @@ Algorithm:
 <figcaption align = "center">Figure 1: How the algorithm transverses through the particle pixel map and the resulting pixel boundary.</figcaption>
 </p>
 
-### Fiber Length
-
-Fiber length is calculated by the following approach:
-
-1. Find the skeleton of the object (Figure 2 B).
-2. Find pixels in the skeleton with only one non-zero neighbour skeleton pixel (Fiure 2 C). Define them as endpoints.
-3. Find the shortest distance between all endpoints and select the longest of the shortest paths (Figure 2 D).
-
-The skeleton is calculated using the Zhang-suen thinning algorithm. Endpoints are found by visiting each skeleton pixel and find the pixels with only one neighbour skeleton pixel. The shortest distance between each endpoint is found by the breath first search algorithm. The longest path is found by comparing each of the shortest paths between endpoints and selecting the longest. Hence, the fiber length is the longest shortest path between endpoints.
-
-<p align="center">
-<img src="fig02.png">
-<figcaption align = "center">Figure 2: A: Particle before skeletonization. B: Morphological skeletonization of A. Notice multiple branches departing from the main skeleton. C: Endpoints of the skeleton. D: Longest path in skeleton between two endpoints. The yellow line in D is defined as the fiber length.</figcaption>
-</p>
-
-
-
 
 
 
