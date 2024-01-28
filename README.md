@@ -4,9 +4,9 @@ MicroMorph: The Microplastic Shape and Size Analyzer
 
 ![](microMorph.gif)
 
-## Fibers and Numbers (FAN)
+## Purpose
 
-FAN calculates the shape morphology and size of objects from the particle map provided by sIMPle (https://simple-plastics.eu/). It provides a graphical interface to inspect particles and their respective shape characteristics. The program calculates the following size and shape descriptors:
+MicroMorph is originally intended to analyze the shape morphology and calculate the size of objects from the particle map provided by sIMPle (https://simple-plastics.eu/). However, its capabilities has been extended to include "binary" images, such as binarized images from [ImageJ](https://imagej.net/ij/). MicroMorph provides a graphical interface to inspect particles and their respective shape characteristics. The program calculates the following size and shape descriptors:
 
 Size:
 * Area, perimeter, minor dimension, major dimension, perimeter, and maximum and minimum Feret diameter
@@ -14,12 +14,11 @@ Size:
 Shape:
 * Convexity, convex area, solidity, equivalent circle diameter, circularity, compactness, aspect ratio, Feret ratio, fiber length, fiber curl, average fiber diameter, fiber elongation
 
-FAN is written in C-idiomatic style C++ code with little use of C++ features (pretty much just std::vector). Any external libraries are statically linked and the only dependencies are the Microsoft runtime distributables and OpenGL libraries.
-
+MicroMorph is written in C-idiomatic style C++ code with little use of C++ features (pretty much just std::vector). Any external libraries are statically linked and the only dependencies are the Microsoft runtime distributables and OpenGL libraries.
 
 ## Usage
 
-Run FAN.exe. An unfinished documentation is avaialble in the "documentation.odf" with an explanation of the most critical features. 
+Run MicroMorph.exe. An unfinished documentation is avaialble in the "documentation.odf" with an explanation of the most critical features.
 
 ## Algorithms
 
@@ -30,7 +29,7 @@ FAN includes a number of algorithms to calculate the size and shape of Microplas
 * Convex hull
 * Feret's diameter
 * Zhang-suen thinning
-* Skeletonazition
+* Skeletonization
 * Breadth-first search, and more. 
 
 The most interesting algorithms are explained below. 
