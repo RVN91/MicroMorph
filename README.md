@@ -6,7 +6,11 @@ MicroMorph: The Microplastic Shape and Size Analyzer
 
 ## Purpose
 
-MicroMorph is originally intended to analyze the shape morphology and calculate the size of objects from the particle map provided by sIMPle (https://simple-plastics.eu/). However, its capabilities has been extended to include "binary" images, such as binarized images from [ImageJ](https://imagej.net/ij/). MicroMorph provides a graphical interface to inspect particles and their respective shape characteristics. The program calculates the following size and shape descriptors:
+MicroMorph is originally intended for the rapid calculation of the shape morphology and the size of objects from the particle map provided by [sIMPle](https://simple-plastics.eu/) (https://simple-plastics.eu/). 
+Particularly, MicroMorph is targeted towards calculating better estimates of the principal length of curvilinear particles (specifically fibers).
+However, its capabilities have been extended to include "binary" images, such as binarized images from [ImageJ](https://imagej.net/ij/), to target a general
+audience outside of [sIMPle](https://simple-plastics.eu/) users. 
+MicroMorph provides a graphical interface to inspect particles and their respective shape characteristics. The program calculates the following size and shape descriptors:
 
 Size:
 * Area, perimeter, minor dimension, major dimension, perimeter, and maximum and minimum Feret diameter
@@ -18,7 +22,7 @@ MicroMorph is written in C-idiomatic style C++ code with little use of C++ featu
 
 ## Usage
 
-Run MicroMorph.exe. An unfinished documentation is avaialble in the "documentation.odf" with an explanation of the most critical features.
+Run MicroMorph.exe. An unfinished documentation is available in the "documentation.odf" with an explanation of the most critical features.
 
 ## Algorithms
 
@@ -36,7 +40,7 @@ The most interesting algorithms are explained below.
 
 ### Contour tracing
 
-First, it transverses through the array row wise and assigns the first pixel it encounters as the starting pixel of the boundary (b). Then the algorithm travels through the array in the Moore Neighbourhood until the starting pixel is reached again, see Fig. 1. The algorithm ONLY works for closed boundaries!
+First, it traverses through the array row wise and assigns the first pixel it encounters as the starting pixel of the boundary (b). Then the algorithm travels through the array in the Moore Neighbourhood until the starting pixel is reached again, see Fig. 1. The algorithm ONLY works for closed boundaries!
 
 Algorithm:
 1. Find the first non-zero pixel travelling row wise.
@@ -48,7 +52,7 @@ Algorithm:
 
 <p align="center">
 <img src="fig01.png">
-<figcaption align = "center">Figure 1: How the algorithm transverses through the particle pixel map and the resulting pixel boundary.</figcaption>
+<figcaption align = "center">Figure 1: How the algorithm traverses through the particle pixel map and the resulting pixel boundary.</figcaption>
 </p>
 
 
